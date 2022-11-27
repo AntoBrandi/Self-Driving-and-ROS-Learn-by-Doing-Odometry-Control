@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
     // register a subscriber on the topic /chatter that will listen for String messages
     // when a new message is received, the callback function is triggered and starts its execution
-    ros::Subscriber sub = n.subscribe("chatter", 1000, msgCallback);
+    ros::Subscriber sub = n.subscribe("chatter", 10, msgCallback);
 
     // keeps the node up and running
     ros::spin();

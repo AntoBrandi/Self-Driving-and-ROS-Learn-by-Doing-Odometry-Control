@@ -3,10 +3,10 @@ import rospy
 from std_msgs.msg import String
 
 
-def callback(data):
+def callback(msg):
     # This function is called each time a new message is published on the topic /chatter
     # The message that has been published is then passed as input to this function
-    rospy.loginfo("New message received: %s", data.data)
+    rospy.loginfo("New message received: %s", msg.data)
    
     
 if __name__ == "__main__":
