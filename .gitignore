@@ -1,4 +1,5 @@
-**/bumperbot_ws/devel
-**/bumperbot_ws/build
-**/bumperbot_ws/.vscode
-**/bumperbot_ws/.catkin_workspace
+**/devel
+**/build
+**/.catkin_workspace
+**/.vscode
+**.pyc
