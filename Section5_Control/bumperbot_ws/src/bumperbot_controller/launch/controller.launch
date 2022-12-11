@@ -1,0 +1,14 @@
+<launch>
+
+      <rosparam file="$(find joint_state_controller)/joint_state_controller.yaml" command="load"/>
+      <rosparam file="$(find bumperbot_controller)/config/simple_controller.yaml" command="load" />
+
+      <!-- Convert joint states to TF transforms for rviz, etc -->
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" 
+            respawn="false" output="screen"/>
+
+      <!-- Launch the controller manager with the wheel controller -->
+      <node name="controller_manager" pkg="controller_manager" type="spawner"
+            respawn="false" output="screen" args="joint_state_controller wheel_left_controller wheel_right_controller" />
+     
+</launch>

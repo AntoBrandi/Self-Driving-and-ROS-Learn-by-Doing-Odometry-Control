@@ -2,28 +2,6 @@
 
 <robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <transmission name="wheel_right_transmission">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="wheel_right_joint" >
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="wheel_right_motor" >
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-      <mechanicalReduction>1.0</mechanicalReduction>
-    </actuator>
-  </transmission>
-  
-  <transmission name="wheel_left_transmission">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="wheel_left_joint" >
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="wheel_left_motor" >
-      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
-      <mechanicalReduction>1.0</mechanicalReduction>
-    </actuator>
-  </transmission>
-
   <gazebo reference="wheel_left_link">
     <mu1>1000000000000000.0</mu1>
     <mu2>1000000000000000.0</mu2>
