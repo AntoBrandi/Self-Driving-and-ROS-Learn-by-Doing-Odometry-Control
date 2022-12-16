@@ -3,7 +3,6 @@ import rospy
 from std_msgs.msg import Float64
 from geometry_msgs.msg import Twist
 import numpy as np
-import math
 
 
 class SimpleController(object):
