@@ -6,17 +6,15 @@
 SimpleController::SimpleController(const ros::NodeHandle &nh,
                                    double radius,
                                    double separation)
-                                  : nh_(nh),
-                                    wheel_radius_(radius),
-                                    wheel_separation_(separation)
+                                  : nh_(nh)
 {
-    ROS_INFO_STREAM("Using wheel radius " << wheel_radius_);
-    ROS_INFO_STREAM("Using wheel separation " << wheel_separation_);
+    ROS_INFO_STREAM("Using wheel radius " << radius);
+    ROS_INFO_STREAM("Using wheel separation " << separation);
     right_cmd_pub_ = nh_.advertise<std_msgs::Float64>("wheel_right_controller/command", 10);
     left_cmd_pub_ = nh_.advertise<std_msgs::Float64>("wheel_left_controller/command", 10);
     vel_sub_ = nh_.subscribe("bumperbot_controller/cmd_vel", 1000, &SimpleController::velCallback, this);
 
-    speed_conversion_ << wheel_radius_/2, wheel_radius_/2, wheel_radius_/wheel_separation_, -wheel_radius_/wheel_separation_;
+    speed_conversion_ << radius/2, radius/2, radius/separation, -radius/separation;
     ROS_INFO_STREAM("The conversion matrix is \n" << speed_conversion_);
 }
 
