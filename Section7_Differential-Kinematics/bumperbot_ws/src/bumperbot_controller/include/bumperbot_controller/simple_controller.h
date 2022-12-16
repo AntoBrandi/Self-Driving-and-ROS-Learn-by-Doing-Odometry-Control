@@ -19,7 +19,5 @@ private:
     ros::Publisher left_cmd_pub_;
 
     // Differential Kinematics
-    double wheel_radius_;
-    double wheel_separation_;
     Eigen::Matrix2d speed_conversion_;
 };
