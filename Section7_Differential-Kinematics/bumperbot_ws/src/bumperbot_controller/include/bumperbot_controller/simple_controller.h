@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SIMPLE_CONTROLLER_H
+#define SIMPLE_CONTROLLER_H
 
 #include <ros/ros.h>
 #include <geometry_msgs/Twist.h>
@@ -21,3 +22,4 @@ private:
     // Differential Kinematics
     Eigen::Matrix2d speed_conversion_;
 };
+#endif 
