@@ -6,23 +6,16 @@
   <link name="base_footprint"/>
   
   <link name="base_link">
-    <inertial>
-      <origin xyz="0 0 0.04" rpy="0.0 0.25 0.3" />
-      <mass value="8.2573504e-01"/>
-      <inertia ixx="2.2124416e-02" ixy="-1.2294101e-04" ixz="3.4938785e-04"
-               iyy="2.1193702e-02" iyz="-5.0120904e-05"
-               izz="2.0064271e-02" />
-    </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
+        <mesh filename="base_link.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
+        <mesh filename="base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -34,7 +27,7 @@
   </joint>
   
   <joint name="wheel_right_joint" type="continuous">
-    <origin xyz="0 -0.0701101849418637 0" rpy="0 0 0" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="wheel_right_link" />
     <axis xyz="0 1 0" />
