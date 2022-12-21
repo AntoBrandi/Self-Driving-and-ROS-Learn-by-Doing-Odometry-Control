@@ -32,6 +32,13 @@
     <child link="base_link" />
     <origin xyz="0 0 0.033" rpy="0 0 0"/>
   </joint>
+  
+  <joint name="wheel_right_joint" type="continuous">
+    <origin xyz="0 -0.0701101849418637 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="wheel_right_link" />
+    <axis xyz="0 1 0" />
+  </joint>
 
   <link name="wheel_right_link">
     <inertial>
@@ -55,12 +62,7 @@
     </collision>
   </link>
 
-  <joint name="wheel_right_joint" type="continuous">
-    <origin xyz="0 -0.0701101849418637 0" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="wheel_right_link" />
-    <axis xyz="0 1 0" />
-  </joint>
+  
   
   <link
     name="wheel_left_link">
