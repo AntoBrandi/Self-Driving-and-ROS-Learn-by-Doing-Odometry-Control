@@ -16,6 +16,7 @@ catkin_python_setup()
 
 add_service_files(
   FILES
+  AddTwoInts.srv
   GetTransform.srv
 )
 
@@ -44,6 +45,9 @@ catkin_install_python(PROGRAMS
     nodes/simple_subscriber.py
     nodes/turtlesim_kinematics_node.py
     nodes/tf_examples_node.py
+    nodes/simple_timer.py
+    nodes/simple_service_server.py
+    nodes/simple_service_client.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -74,3 +78,14 @@ add_executable(tf_examples_node
 )
 add_dependencies(tf_examples_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(tf_examples_node tf_examples ${catkin_LIBRARIES})
+
+add_executable(simple_cpp_timer nodes/simple_timer.cpp)
+target_link_libraries(simple_cpp_timer ${catkin_LIBRARIES})
+
+add_executable(simple_cpp_service_server nodes/simple_service_server.cpp)
+add_dependencies(simple_cpp_service_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(simple_cpp_service_server ${catkin_LIBRARIES})
+
+add_executable(simple_cpp_service_client nodes/simple_service_client.cpp)
+add_dependencies(simple_cpp_service_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(simple_cpp_service_client ${catkin_LIBRARIES})
