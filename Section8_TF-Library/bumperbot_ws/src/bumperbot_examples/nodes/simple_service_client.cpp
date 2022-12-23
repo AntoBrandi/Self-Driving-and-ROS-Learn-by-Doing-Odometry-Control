@@ -17,11 +17,11 @@ int main(int argc, char **argv)
 
     // Sum the two numbers passed as arguments to this script 
     // by calling the action server that adds two integers
-    ros::NodeHandle n;
-    ros::ServiceClient client = n.serviceClient<bumperbot_examples::AddTwoInts>("add_two_ints");
+    ros::NodeHandle nh;
+    ros::ServiceClient client = nh.serviceClient<bumperbot_examples::AddTwoInts>("add_two_ints");
     bumperbot_examples::AddTwoInts srv;
-    srv.request.a = atoll(argv[1]);
-    srv.request.b = atoll(argv[2]);
+    srv.request.a = atoi(argv[1]);
+    srv.request.b = atoi(argv[2]);
 
     // Show the response of the service
     ROS_INFO("Requesting %d + %d", (int)srv.request.a, (int)srv.request.b);
