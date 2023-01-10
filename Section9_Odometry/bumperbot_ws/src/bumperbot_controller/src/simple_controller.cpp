@@ -38,7 +38,6 @@ SimpleController::SimpleController(const ros::NodeHandle &nh,
 
     transform_stamped_.header.frame_id = "odom";
     transform_stamped_.child_frame_id = "base_footprint";
-    transform_stamped_.transform.translation.z = 0.0;
 
     prev_time_ = ros::Time::now();
 }
