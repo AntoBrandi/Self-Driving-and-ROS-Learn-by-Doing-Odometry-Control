@@ -48,7 +48,6 @@ class SimpleController(object):
         self.transform_stamped_ = TransformStamped()
         self.transform_stamped_.header.frame_id = "odom"
         self.transform_stamped_.child_frame_id = "base_footprint"
-        self.transform_stamped_.transform.translation.z = 0.0
 
         self.prev_time_ = rospy.Time.now()
 
