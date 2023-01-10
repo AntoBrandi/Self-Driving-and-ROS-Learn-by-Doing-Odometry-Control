@@ -31,10 +31,6 @@ SimpleController::SimpleController(const ros::NodeHandle &nh,
     // Fill the Odometry message with invariant parameters
     odom_msg_.header.frame_id = "odom";
     odom_msg_.child_frame_id = "base_footprint";
-    odom_msg_.twist.twist.linear.y = 0.0;
-    odom_msg_.twist.twist.linear.z = 0.0;
-    odom_msg_.twist.twist.angular.x = 0.0;
-    odom_msg_.twist.twist.angular.y = 0.0;
     odom_msg_.pose.pose.orientation.x = 0.0;
     odom_msg_.pose.pose.orientation.y = 0.0;
     odom_msg_.pose.pose.orientation.z = 0.0;
