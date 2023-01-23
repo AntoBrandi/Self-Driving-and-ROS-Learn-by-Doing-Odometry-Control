@@ -1,6 +1,6 @@
 <launch>
       <arg name="wheel_radius"            default="0.033"/>
-      <arg name="wheel_radius_error"      default="0.0"/>
+      <arg name="wheel_radius_error"      default="0.005"/>
       <arg name="wheel_separation"        default="0.17"/>
       <arg name="wheel_separation_error"  default="0.02"/>
       <arg name="use_python"              default="false"/>
