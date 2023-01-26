@@ -1,0 +1,20 @@
+<launch>
+    <arg name="use_python"  default="false"/>
+    <arg name="py_suffix"   value=".py"       if="$(arg use_python)"/>
+    <arg name="py_suffix"   value=""          unless="$(arg use_python)"/>
+  
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint_ekf_broadcaster" 
+          args="0 0 0.103 1 0 0 0 base_footprint_ekf imu_link_ekf 100" />
+  
+    <!-- Republish the IMU by changing the Frame ID -->
+    <node pkg="bumperbot_localization" type="imu_republisher_node$(arg py_suffix)" name="imu_republisher_node" 
+          respawn="true" output="screen">
+          <param name="frame_id"  value="base_footprint_ekf"/>
+    </node>
+  
+    <!-- Launch the EKF from the robot_localization package-->
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_node" clear_params="true">
+      <rosparam command="load" file="$(find bumperbot_localization)/config/ekf.yaml" />  
+    </node>
+  
+</launch>
