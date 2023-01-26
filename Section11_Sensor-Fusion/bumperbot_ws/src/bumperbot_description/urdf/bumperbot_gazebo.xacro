@@ -69,5 +69,18 @@
       <legacyModeNS>true</legacyModeNS>
     </plugin>
   </gazebo>
+
+  <!-- IMU -->
+  <gazebo>
+    <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
+      <alwaysOn>true</alwaysOn>
+      <bodyName>imu_link</bodyName>
+      <frameName>imu_link</frameName>
+      <topicName>imu</topicName>
+      <serviceName>imu_service</serviceName>
+      <gaussianNoise>0.001</gaussianNoise>
+      <updateRate>1000</updateRate>
+    </plugin>
+  </gazebo>
   
 </robot>
