@@ -3,7 +3,6 @@
 #include <ros/ros.h>
 #include <nav_msgs/Odometry.h>
 #include <sensor_msgs/Imu.h>
-#include <geometry_msgs/TransformStamped.h>
 
 
 class KalmanFilter
