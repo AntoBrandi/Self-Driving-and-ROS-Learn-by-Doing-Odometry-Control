@@ -41,8 +41,8 @@ class KalmanFilter(object):
         
         self.motion_ = odom.twist.twist.angular.z - self.last_angular_z_
 
-        self.statePrediction()
         self.measurementUpdate()
+        self.statePrediction()
 
         # Update for the next iteration
         self.last_angular_z_ = odom.twist.twist.angular.z
