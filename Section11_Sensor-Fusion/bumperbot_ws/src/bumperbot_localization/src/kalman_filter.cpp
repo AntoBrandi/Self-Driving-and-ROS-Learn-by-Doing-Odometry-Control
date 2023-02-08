@@ -1,6 +1,4 @@
 #include "bumperbot_localization/kalman_filter.h"
-#include <tf2/utils.h>
-#include <tf2_ros/transform_broadcaster.h>
 
 
 KalmanFilter::KalmanFilter(const ros::NodeHandle &nh) 
@@ -34,8 +32,8 @@ void KalmanFilter::odomCallback(const nav_msgs::Odometry &odom)
 
     motion_ = odom.twist.twist.angular.z - last_angular_z_;
 
-    statePrediction();
     measurementUpdate();
+    statePrediction();
 
     // Update for the next iteration
     last_angular_z_ = odom.twist.twist.angular.z;
