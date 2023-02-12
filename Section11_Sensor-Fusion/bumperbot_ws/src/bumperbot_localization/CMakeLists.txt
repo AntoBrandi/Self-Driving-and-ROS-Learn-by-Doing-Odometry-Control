@@ -7,9 +7,6 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   nav_msgs
   sensor_msgs
-  geometry_msgs
-  tf2
-  tf2_ros
 )
 
 catkin_python_setup()
@@ -19,9 +16,6 @@ catkin_package(
   CATKIN_DEPENDS
     nav_msgs
     sensor_msgs
-    geometry_msgs
-    tf2
-    tf2_ros
 )
 
 include_directories(
