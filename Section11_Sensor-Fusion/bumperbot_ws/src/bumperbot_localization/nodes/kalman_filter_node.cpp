@@ -1,3 +1,4 @@
+#include <ros/ros.h>
 #include "bumperbot_localization/kalman_filter.h"
 
 
