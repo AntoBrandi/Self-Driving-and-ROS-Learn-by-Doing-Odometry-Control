@@ -49,8 +49,8 @@ class NoisyController(object):
         # and then converts it in the global frame and publishes the TF
 
         # Add noise to wheel readings
-        wheel_encoder_left = msg.position[0] + np.random.normal(0, 0.05)
-        wheel_encoder_right = msg.position[1] + np.random.normal(0, 0.05)
+        wheel_encoder_left = msg.position[0] + np.random.normal(0, 0.005)
+        wheel_encoder_right = msg.position[1] + np.random.normal(0, 0.005)
 
         dp_left = wheel_encoder_left - self.left_wheel_prev_pos_
         dp_right = wheel_encoder_right - self.right_wheel_prev_pos_

@@ -32,8 +32,8 @@ void KalmanFilter::odomCallback(const nav_msgs::Odometry &odom)
 
     motion_ = odom.twist.twist.angular.z - last_angular_z_;
 
-    measurementUpdate();
     statePrediction();
+    measurementUpdate();
 
     // Update for the next iteration
     last_angular_z_ = odom.twist.twist.angular.z;
