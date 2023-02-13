@@ -46,8 +46,8 @@ void NoisyController::jointCallback(const sensor_msgs::JointState &state)
     // Add noise to wheel readings
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::default_random_engine noise_generator(seed);
-    std::normal_distribution<double> left_encoder_noise(0.0, 0.05);
-    std::normal_distribution<double> right_encoder_noise(0.0, 0.05);
+    std::normal_distribution<double> left_encoder_noise(0.0, 0.005);
+    std::normal_distribution<double> right_encoder_noise(0.0, 0.005);
     double wheel_encoder_left = state.position.at(0) + left_encoder_noise(noise_generator);
     double wheel_encoder_right = state.position.at(1) + right_encoder_noise(noise_generator);
     
