@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "imu_republisher_node");
     ros::NodeHandle nh;
 
-    ros::Publisher imu_pub = nh.advertise<sensor_msgs::Imu>("imu_ekf", 10);
+    imu_pub = nh.advertise<sensor_msgs::Imu>("imu_ekf", 10);
     ros::Subscriber imu_sub = nh.subscribe("imu", 1000, imuCallback);
 
     ros::spin();
