@@ -55,8 +55,8 @@ void KalmanFilter::measurementUpdate()
     mean_ = (measurement_variance_ * mean_ + variance_ * imu_angular_z_)
           / (variance_ + measurement_variance_);
 
-    variance_ = (variance_ * motion_variance_) 
-              / (variance_ + motion_variance_);
+    variance_ = (variance_ * measurement_variance_) 
+              / (variance_ + measurement_variance_);
 }
 
 
