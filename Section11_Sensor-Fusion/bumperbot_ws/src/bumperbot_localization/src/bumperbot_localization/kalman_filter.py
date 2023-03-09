@@ -61,8 +61,8 @@ class KalmanFilter(object):
         self.mean_ = (self.measurement_variance_ * self.mean_ + self.variance_ * self.imu_angular_z_) \
                    / (self.variance_ + self.measurement_variance_)
                      
-        self.variance_ = (self.variance_ * self.motion_variance_) \
-                       / (self.variance_ + self.motion_variance_)
+        self.variance_ = (self.variance_ * self.measurement_variance_) \
+                       / (self.variance_ + self.measurement_variance_)
 
 
     def statePrediction(self):
