@@ -51,7 +51,8 @@ If you find this course interesting and you are passionate about robotics in gen
    <img src="images/cover_manipulators.png" alt="Cover Manipulators">
 </p>
 In this course I'll guid you through the creation of a real robotic arm that you can control with your voice using the Amazon Alexa voice assistant.
-Some of the concepts that are covered in this course are:
+Some of the concepts that are covered in this course are
+
 * Gazebo Simulation
 * Robot Kinematics
 * ROS Basics
