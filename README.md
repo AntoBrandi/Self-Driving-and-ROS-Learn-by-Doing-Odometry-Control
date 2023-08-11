@@ -72,7 +72,7 @@ Some of the concepts that are covered in this course are
 * Interface Alexa with ROS
 
 Looks funny? Check it out on the following platforms:
-* [Udemy](https://www.udemy.com/course/robotics-and-ros-learn-by-doing-manipulators/?couponCode=LEARNBYDOING)
+* [Udemy](https://www.udemy.com/course/robotics-and-ros-learn-by-doing-manipulators/?referralCode=6EDAA8501C5E3CCEE526)
 
 <!-- GETTING STARTED -->
 ## Getting Started
