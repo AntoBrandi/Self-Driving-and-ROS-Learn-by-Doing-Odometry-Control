@@ -1,7 +1,6 @@
 # Self-Driving and ROS - Learn by Doing! Odometry & Control
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Udemy][udemy-shield]][udemy-url]
-[![Skillshare][skillshare-shield]][skillshare-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -24,12 +23,11 @@
 
 <!-- ABOUT THE COURSE -->  
 ## About the Course
-This repository contain the material used in the course **Self Driving and ROS - Learn by Doing! Odometry & Control** that is currently available on the following platforms:
-* [Udemy](https://www.udemy.com/course/self-driving-and-ros-learn-by-doing-odometry-control/?couponCode=LEARNBYDOING)
-* [Skillshare](https://skl.sh/3Jzo74f)
+This repository contains the material used in the course **Self Driving and ROS - Learn by Doing! Odometry & Control** that is currently available on the following platforms:
+* [Udemy](https://www.udemy.com/course/self-driving-and-ros-learn-by-doing-odometry-control/?referralCode=5B857932D7C6FE9D014D)
 
 If you are passionate about Self-Driving and you want to make a real robot Autonomously Navigate, then this course is for you! 
-Apart from explaining in details all the functionalities and the logic of **ROS**, the Robot Operating System, it covers some key concepts of Autonomous Navigation such as
+Apart from explaining in detail all the functionalities and the logic of **ROS**, the Robot Operating System, it covers some key concepts of Autonomous Navigation such as
 * Sensor Fusion
 * Kalman Filter
 * Probability Theory
@@ -44,6 +42,19 @@ Furthermore, all the laboratory classes in which we are going to develop the act
 <!-- OTHER COURSES -->
 ### Other Courses
 If you find this course interesting and you are passionate about robotics in general (not limited to autonomous mobile robots), then you definitely have to take a look at my outher courses!
+
+#### Robotics and ROS 2 - Learn by Doing! Manipulators
+<br />
+<p align="center">
+   <img src="images/cover_manipulators_2.png" alt="Cover Manipulators 2">
+</p>
+
+Ready to boost your career as Robotics Software Developer and be knowledgeable about the latest technologies in robotics?
+Do you want to put yourself at the forefront of the demand for ROS 2 developers? Many companies and universities are already switching to the new, amazing version of ROS.
+Build your own robot, fully powered by ROS 2!
+
+Excited? Check it out:
+* [Udemy](https://www.udemy.com/course/robotics-and-ros-2-learn-by-doing-manipulators/?referralCode=4B27D2CF97C1E099DD4C)
 
 #### Robotics and ROS - Learn by Doing! Manipulators
 <br />
@@ -62,7 +73,6 @@ Some of the concepts that are covered in this course are
 
 Looks funny? Check it out on the following platforms:
 * [Udemy](https://www.udemy.com/course/robotics-and-ros-learn-by-doing-manipulators/?couponCode=LEARNBYDOING)
-* [Skillshare](https://skl.sh/3UAFaXW)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -148,6 +158,4 @@ My Projects: [https://github.com/AntoBrandi](https://github.com/AntoBrandi)
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/antonio-brandi-512166bb/
 [udemy-shield]: https://img.shields.io/badge/-Udemy-black.svg?style=flat-square&logo=udemy&colorB=555
-[udemy-url]: https://www.udemy.com/user/antonio-brandi/
-[skillshare-shield]: https://img.shields.io/badge/-Skillshare-black.svg?style=flat-square&logo=skillshare&colorB=555
-[skillshare-url]: https://www.skillshare.com/en/profile/Antonio-Brandi/471799472
+[udemy-url]: https://www.udemy.com/course/self-driving-and-ros-learn-by-doing-odometry-control/?referralCode=5B857932D7C6FE9D014D
