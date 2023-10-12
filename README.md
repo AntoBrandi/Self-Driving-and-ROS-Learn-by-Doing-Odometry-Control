@@ -43,24 +43,24 @@ Furthermore, all the laboratory classes in which we are going to develop the act
 ### Other Courses
 If you find this course interesting and you are passionate about robotics in general (not limited to autonomous mobile robots), then you definitely have to take a look at my outher courses!
 
+#### Self-Driving and ROS 2 - Learn by Doing! Odometry & Control
+<br />
+<p align="center">
+   <img src="images/cover_self_driving_2.png" alt="Cover Self-Driving 2">
+</p>
+Ready to boost your career as Robotics Software Developer and be knowledgeable about the latest technologies in robotics?
+Do you want to put yourself at the forefront of the demand for **ROS 2** developers? Many companies and universities are already switching to the new, amazing version of ROS.
+Build your own robot, fully powered by ROS 2!
+
+Excited? Check it out:
+* [Udemy](https://www.udemy.com/course/self-driving-and-ros-2-learn-by-doing-odometry-control/?referralCode=50BCC4E84DB2DB09BFB3)
+  
 #### Robotics and ROS 2 - Learn by Doing! Manipulators
 <br />
 <p align="center">
    <img src="images/cover_manipulators_2.png" alt="Cover Manipulators 2">
 </p>
 
-Ready to boost your career as Robotics Software Developer and be knowledgeable about the latest technologies in robotics?
-Do you want to put yourself at the forefront of the demand for ROS 2 developers? Many companies and universities are already switching to the new, amazing version of ROS.
-Build your own robot, fully powered by ROS 2!
-
-Excited? Check it out:
-* [Udemy](https://www.udemy.com/course/robotics-and-ros-2-learn-by-doing-manipulators/?referralCode=4B27D2CF97C1E099DD4C)
-
-#### Robotics and ROS - Learn by Doing! Manipulators
-<br />
-<p align="center">
-   <img src="images/cover_manipulators.png" alt="Cover Manipulators">
-</p>
 In this course I'll guid you through the creation of a real robotic arm that you can control with your voice using the Amazon Alexa voice assistant.
 Some of the concepts that are covered in this course are
 
@@ -72,6 +72,17 @@ Some of the concepts that are covered in this course are
 * Interface Alexa with ROS
 
 Looks funny? Check it out on the following platforms:
+* [Udemy](https://www.udemy.com/course/robotics-and-ros-2-learn-by-doing-manipulators/?referralCode=4B27D2CF97C1E099DD4C)
+
+#### Robotics and ROS - Learn by Doing! Manipulators
+<br />
+<p align="center">
+   <img src="images/cover_manipulators.png" alt="Cover Manipulators">
+</p>
+Do you want to master Robot Manipulators with **ROS** as well?
+Despite many companies already started switching to ROS 2, most of the software is currently developed in ROS 1 and it will be at the core of their software for many more years!
+
+Knowing both ROS 1 and ROS 2 will position you at the forefront of this demand, making you an attractive candidate for a wide range of roles, for this reason you can create and code your robotic arm both using ROS 1 and ROS 2:
 * [Udemy](https://www.udemy.com/course/robotics-and-ros-learn-by-doing-manipulators/?referralCode=6EDAA8501C5E3CCEE526)
 
 <!-- GETTING STARTED -->
